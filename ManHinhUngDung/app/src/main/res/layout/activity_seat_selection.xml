@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Màn hình rạp -->
+    <TextView
+        android:id="@+id/tvScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MÀN HÌNH"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorDarkRed"
+        android:gravity="center"
+        android:background="#CCCCCC"
+        android:padding="12dp"
+        android:textStyle="bold"/>
+
+    <!-- Grid ghế -->
+    <GridView
+        android:id="@+id/gridSeats"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:numColumns="8"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Thông tin tóm tắt -->
+    <TextView
+        android:id="@+id/tvSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ghế đã chọn: 0 | Tổng tiền: 0đ"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <!-- Nút tiếp tục -->
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiếp tục"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+</LinearLayout>
