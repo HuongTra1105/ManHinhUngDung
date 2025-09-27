@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Logo / Tên ứng dụng -->
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/colorRed"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Poster phim -->
+        <ImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/muado"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Tên phim -->
+        <TextView
+            android:id="@+id/tvMovieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mưa đỏ"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Ngày giờ chiếu -->
+        <TextView
+            android:id="@+id/tvShowtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27/09/2025 - 14:00"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Rạp / Phòng -->
+        <TextView
+            android:id="@+id/tvCinemaRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rạp: RIO Đà Nẵng - Phòng 3"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Ghế -->
+        <TextView
+            android:id="@+id/tvSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghế: A1, A2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- QR Code -->
+        <ImageView
+            android:id="@+id/imgQRCode"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/qr"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Nút hành động -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnSaveTicket"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lưu vé"
+                android:backgroundTint="@color/colorRed"/>
+
+            <Button
+                android:id="@+id/btnShareTicket"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Chia sẻ"
+                android:backgroundTint="@color/colorPrimaryDark"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
