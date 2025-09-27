@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ManHinhUngDung">
         <activity
+            android:name=".SeatSelectionActivity"
+            android:exported="false" />
+        <activity
             android:name=".PaymentActivity"
             android:exported="false" />
         <activity
