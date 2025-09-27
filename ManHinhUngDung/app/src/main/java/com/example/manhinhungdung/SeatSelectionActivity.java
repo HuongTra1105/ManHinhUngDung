@@ -28,7 +28,7 @@ public class SeatSelectionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seat_selection); // activity_seat_selection.xml
+        setContentView(R.layout.activity_seat_selection);
 
         tvScreen123 = findViewById(R.id.tvScreen);
         gridSeats123 = findViewById(R.id.gridSeats);

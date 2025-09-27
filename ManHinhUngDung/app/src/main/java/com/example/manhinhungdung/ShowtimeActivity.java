@@ -31,7 +31,7 @@ public class ShowtimeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_showtime); // activity_showtime.xml
+        setContentView(R.layout.activity_showtime);
 
         tvMovieTitle123 = findViewById(R.id.tvMovieTitle);
         imgPoster123 = findViewById(R.id.imgPoster);

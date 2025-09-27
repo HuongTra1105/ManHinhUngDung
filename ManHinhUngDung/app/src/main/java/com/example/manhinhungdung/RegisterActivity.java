@@ -21,7 +21,7 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register); // activity_register.xml
+        setContentView(R.layout.activity_register);
 
         edtName123 = findViewById(R.id.edtName);
         edtEmail123 = findViewById(R.id.edtEmail);
@@ -51,7 +51,6 @@ public class RegisterActivity extends AppCompatActivity {
         if (TextUtils.isEmpty(pass123)) { edtPassword123.setError("Vui lòng nhập mật khẩu"); return; }
         if (!pass123.equals(confirm123)) { edtConfirmPassword123.setError("Mật khẩu xác nhận không khớp"); return; }
 
-        // TODO: gửi lên server
         Toast.makeText(this, "Đăng ký thành công!", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, MainActivity.class));
         finish();

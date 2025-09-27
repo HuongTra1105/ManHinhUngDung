@@ -17,7 +17,7 @@ public class TicketActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ticket); // activity_ticket.xml
+        setContentView(R.layout.activity_ticket);
 
         tvAppName123 = findViewById(R.id.tvAppName);
         imgPoster123 = findViewById(R.id.imgPoster);
@@ -35,7 +35,6 @@ public class TicketActivity extends AppCompatActivity {
 
         tvMovieTitle123.setText(getIntent().getStringExtra("movieTitle") != null ? getIntent().getStringExtra("movieTitle") : "Phim");
         tvSeats123.setText("Ghế: " + (seats123 != null ? seats123 : ""));
-        // tvShowtime123, tvCinemaRoom123 set tu intent nếu có
 
         btnSaveTicket123.setOnClickListener(v -> Toast.makeText(this, "Vé đã được lưu vào thiết bị", Toast.LENGTH_SHORT).show());
         btnShareTicket123.setOnClickListener(v -> Toast.makeText(this, "Chia sẻ vé thành công", Toast.LENGTH_SHORT).show());

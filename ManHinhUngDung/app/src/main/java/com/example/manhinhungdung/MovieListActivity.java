@@ -18,18 +18,17 @@ public class MovieListActivity extends AppCompatActivity {
     private SearchView searchView123;
     private RecyclerView recyclerViewMovies123;
     private MovieAdapter adapter123;
-    private List<Movie> movieList123;    // danh sách hiện tại (được adapter dùng)
-    private List<Movie> allMovies123;    // toàn bộ danh sách để filter
+    private List<Movie> movieList123;
+    private List<Movie> allMovies123;
 
     @Override
     protected void onCreate(Bundle savedInstanceState123) {
         super.onCreate(savedInstanceState123);
-        setContentView(R.layout.activity_movie_list); // activity_movie_list.xml
+        setContentView(R.layout.activity_movie_list);
 
         searchView123 = findViewById(R.id.searchView);
         recyclerViewMovies123 = findViewById(R.id.recyclerViewMovies);
 
-        // Tạo dữ liệu demo (bạn thay bằng dữ liệu thật nếu có)
         allMovies123 = new ArrayList<>();
         allMovies123.add(new Movie("Avengers: Endgame", "Hành động - 180 phút", R.drawable.ic_launcher_foreground));
         allMovies123.add(new Movie("Frozen II", "Hoạt hình - 103 phút", R.drawable.ic_launcher_foreground));
@@ -37,15 +36,12 @@ public class MovieListActivity extends AppCompatActivity {
         allMovies123.add(new Movie("Spider-Man: No Way Home", "Hành động - 148 phút", R.drawable.ic_launcher_foreground));
         allMovies123.add(new Movie("Interstellar", "Khoa học viễn tưởng - 169 phút", R.drawable.ic_launcher_foreground));
 
-        // Khởi tạo danh sách hiển thị (clone từ allMovies)
         movieList123 = new ArrayList<>(allMovies123);
 
-        // Khởi tạo adapter (theo signature hiện tại của MovieAdapter)
         adapter123 = new MovieAdapter(this, movieList123);
         recyclerViewMovies123.setLayoutManager(new GridLayoutManager(this, 1));
         recyclerViewMovies123.setAdapter(adapter123);
 
-        // SearchView -> lọc danh sách
         searchView123.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query123) {
@@ -61,7 +57,6 @@ public class MovieListActivity extends AppCompatActivity {
         });
     }
 
-    // Hàm lọc: sửa movieList123 rồi thông báo adapter cập nhật
     private void filterMovies(String query123) {
         String q = query123 == null ? "" : query123.trim().toLowerCase();
         movieList123.clear();

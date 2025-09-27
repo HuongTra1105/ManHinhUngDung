@@ -19,7 +19,7 @@ public class PaymentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment); // activity_payment.xml
+        setContentView(R.layout.activity_payment);
 
         tvMovieInfo123 = findViewById(R.id.tvMovieInfo);
         tvTotalPrice123 = findViewById(R.id.tvTotalPrice);
@@ -40,7 +40,6 @@ public class PaymentActivity extends AppCompatActivity {
             RadioButton rb123 = findViewById(id123);
             String method123 = rb123.getText().toString();
 
-            // TODO: tích hợp payment SDK tùy phương thức
             Intent intent123 = new Intent(this, TicketActivity.class);
             intent123.putExtra("seats", seats123);
             intent123.putExtra("total", total123);
