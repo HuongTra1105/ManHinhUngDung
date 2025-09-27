@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen">
+
+    <!-- Logo / Tên ứng dụng -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cinema App"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textStyle="bold" />
+
+    <!-- Thanh tìm kiếm -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tìm phim..."
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:padding="10dp"
+        android:layout_margin="8dp"
+        android:background="@android:drawable/edit_text" />
+
+    <!-- Banner phim hot -->
+    <ImageView
+        android:id="@+id/imgBanner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Danh sách phim nổi bật -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phim nổi bật"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFeaturedMovies"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Thanh điều hướng dưới -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3"
+        android:background="#DDDDDD"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorDarkRed"/>
+
+        <Button
+            android:id="@+id/btnMyTickets"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Vé của tôi"
+            android:backgroundTint="@color/colorDarkRed"/>
+
+        <Button
+            android:id="@+id/btnAccount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tài khoản"
+            android:backgroundTint="@color/colorDarkRed"/>
+    </LinearLayout>
+</LinearLayout>
