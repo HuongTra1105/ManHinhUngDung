@@ -3,7 +3,7 @@ package com.example.manhinhungdung.models;
 public class Movie {
     private String title;
     private String info;
-    private int posterResId; // ảnh resource (demo), thực tế có thể dùng URL
+    private int posterResId;
 
     public Movie(String title, String info, int posterResId) {
         this.title = title;

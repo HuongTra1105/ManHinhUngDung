@@ -13,8 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.manhinhungdung.R;
 import com.example.manhinhungdung.models.Movie;
-import com.example.manhinhungdung.R;
-import com.example.manhinhungdung.models.Movie;
+
 import com.google.android.material.button.MaterialButton;
 
 import java.util.List;

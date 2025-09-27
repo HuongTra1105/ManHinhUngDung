@@ -7,7 +7,6 @@
     android:background="@drawable/nenlogin"
     android:padding="24dp">
 
-    <!-- Logo / App name -->
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="96dp"
@@ -32,7 +31,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"/>
 
-    <!-- Họ tên -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -53,7 +51,6 @@
             android:textColorHint="@color/colorWhite" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Email -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilEmail"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -74,7 +71,6 @@
             android:textColorHint="@color/colorWhite" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Số điện thoại -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilPhone"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -95,7 +91,6 @@
             android:textColorHint="@color/colorWhite" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Mật khẩu -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilPassword"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -117,7 +112,6 @@
             android:textColorHint="@color/colorWhite" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Xác nhận mật khẩu -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilConfirmPassword"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -139,7 +133,6 @@
             android:textColorHint="@color/colorWhite" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Nút Đăng ký -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnRegister"
         android:layout_width="0dp"
@@ -152,7 +145,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <!-- Link sang Login -->
     <LinearLayout
         android:id="@+id/llBottom"
         android:layout_width="0dp"
