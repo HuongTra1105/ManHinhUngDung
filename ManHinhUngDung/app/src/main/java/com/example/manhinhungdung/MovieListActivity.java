@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.manhinhungdung;
 
 import android.os.Bundle;
 
@@ -7,8 +7,8 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.test.adapters.MovieAdapter;
-import com.example.test.models.Movie;
+import com.example.manhinhungdung.adapters.MovieAdapter;
+import com.example.manhinhungdung.models.Movie;
 
 import java.util.ArrayList;
 import java.util.List;
