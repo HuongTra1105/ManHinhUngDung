@@ -31,7 +31,6 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState123);
         setContentView(R.layout.activity_home);
 
-        // ánh xạ view
         tvAppName123 = findViewById(R.id.tvAppName);
         etSearch123 = findViewById(R.id.etSearch);
         imgBanner123 = findViewById(R.id.imgBanner);
@@ -40,12 +39,10 @@ public class HomeActivity extends AppCompatActivity {
         btnMyTickets123 = findViewById(R.id.btnMyTickets);
         btnAccount123 = findViewById(R.id.btnAccount);
 
-        // cấu hình RecyclerView
         LinearLayoutManager layoutManager =
                 new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerFeaturedMovies123.setLayoutManager(layoutManager);
 
-        // tạo danh sách phim demo
         List<Movie> featured123 = new ArrayList<>();
         featured123.add(new Movie("Mưa đỏ", "Thời lượng: 124 phút", R.drawable.ic_launcher_foreground));
         featured123.add(new Movie("Spider-Man", "Thời lượng: 110 phút", R.drawable.ic_launcher_foreground));
@@ -53,14 +50,11 @@ public class HomeActivity extends AppCompatActivity {
         featured123.add(new Movie("Spider-Man: No Way Home", "Hành động - 148 phút", R.drawable.ic_launcher_foreground));
         featured123.add(new Movie("Interstellar", "Khoa học viễn tưởng - 169 phút", R.drawable.ic_launcher_foreground));
         featured123.add(new Movie("Avengers", "Thời lượng: 120 phút", R.drawable.ic_launcher_foreground));
-        // gắn adapter
         MovieAdapter adapter = new MovieAdapter(this, featured123);
         recyclerFeaturedMovies123.setAdapter(adapter);
 
-
-        // sự kiện 3 nút dưới
         btnHome123.setOnClickListener(v123 -> {
-            // ở Home rồi, có thể refresh hoặc để trống
+
         });
 
         btnMyTickets123.setOnClickListener(v123 ->
