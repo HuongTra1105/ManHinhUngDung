@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
         tvRegister123.setOnClickListener(v -> startActivity(new Intent(this, RegisterActivity.class)));
         tvForgot123.setOnClickListener(v -> {
-            // mở màn hình quên mật khẩu nếu có
         });
     }
 
@@ -52,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         String password = edtPassword123.getText().toString().trim();
-        // demo: mật khẩu "123456" là hợp lệ
         if ("123456".equals(password123)) {
             Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(MainActivity.this, HomeActivity.class));
